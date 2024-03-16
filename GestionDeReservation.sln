@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDeReservation", "GestionDeReservation\GestionDeReservation.csproj", "{D47ABDB4-B14E-4607-8C08-29CDA02430B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D47ABDB4-B14E-4607-8C08-29CDA02430B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47ABDB4-B14E-4607-8C08-29CDA02430B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47ABDB4-B14E-4607-8C08-29CDA02430B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D47ABDB4-B14E-4607-8C08-29CDA02430B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47ABDB4-B14E-4607-8C08-29CDA02430B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47ABDB4-B14E-4607-8C08-29CDA02430B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07E42A23-E412-4318-926C-A6F7796AF0C9}
+	EndGlobalSection
+EndGlobal
