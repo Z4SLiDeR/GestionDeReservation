@@ -13,7 +13,7 @@
                 x:Name="lblDebug"
                 Text="debug Text"
                 Style="{StaticResource LabelDebug}"
-                                    />
+             />
 
             <Button
                x:Name="ButtonTestNew"

@@ -10,6 +10,7 @@ namespace GestionDeReservation
         public MainPage()
         {
             InitializeComponent();
+            lblDebug = new Label();
         }
 
         private void ButtonTestInterfaceAndDataAccess_Clicked(object sender, EventArgs e)
