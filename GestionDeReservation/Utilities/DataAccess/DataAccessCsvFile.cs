@@ -63,7 +63,7 @@ namespace GestionDeReservation.Utilities.DataAccess
                     return new Client(id: int.Parse(fields[1]), lastName: fields[2], firstName: fields[3], email: fields[4], birthday: DateOnly.Parse(fields[5]), phoneNumber: fields[6], gender: fields[7], password: fields[8], address: address);
 
                 case "ADMIN":
-                    return new User(id: int.Parse(fields[1]), lastName: fields[2], firstName: fields[3], email: fields[4], birthday: DateOnly.Parse(fields[5]), phoneNumber: fields[6], gender: fields[7], password: fields[8], address: address);
+                    return new Admin(id: int.Parse(fields[1]), lastName: fields[2], firstName: fields[3], email: fields[4], birthday: DateOnly.Parse(fields[5]), phoneNumber: fields[6], gender: fields[7], password: fields[8], role: Admin.AdminType.Direction ,address: address);
 
                 default:
                     return null;
