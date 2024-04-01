@@ -1,0 +1,2 @@
+FOLDER,C:\POO\MAUI\GestionDeReservation\GestionDeReservation\Configuration\Datas\Csv\
+PEOPLE,PEOPLE_GESTION_DE_RESERVATION.csv

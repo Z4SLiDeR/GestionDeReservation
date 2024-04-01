@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestionDeReservation.Model.People
+namespace GestionDeReservation.Model.Service
 {
     public class Accompanying
     {
@@ -13,14 +13,16 @@ namespace GestionDeReservation.Model.People
         private int _age;
         private string _relationshipType;
 
-        public Accompanying(string lastName, string firstName, int age, string relationshipType) 
+        public Accompanying(string lastName, string firstName, int age, string relationshipType)
         {
 
         }
         #region GetAndSet
 
         #endregion
+
         #region Methodes
+
         #endregion
     }
 }

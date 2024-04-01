@@ -1,0 +1,7 @@
+Class;id;lastName;firstName;email;birthday;phoneNumber;gender;password;address;role
+USER;1;Doyon;EugŠne ;EugeneDoyon@hotmail.com;12-08-04;0473817070;true;;;
+USER;2;Boul‚ ;Luce;LuceBoule@gmail.com;09-03-40;0487824418;false;;;
+CLIENT;3;Vernadeau;Cendrillon;CendrillonVernadeau@gmail.com;24-09-00;0486393939;false;Vcendrillon2000;;
+CLIENT;4;Lacasse;Dreux;DreuxLacasse@hotmail.com;25-12-62;0473329001;true;Ldreux1962;;
+ADMIN;5;Chapin;Poisson;ChapinPoisson@gmail.com;02-11-61;0495684168;true;Cpoisson1961;;Employ‚
+ADMIN;6;Goudreau;Alphonse;AlphonseGoudreau@gmail.com;16-05-80;0471507348;true;GAlphonse1980;;Direction

@@ -7,8 +7,8 @@
         public List<bool> ReminderAppointmentMessagesSent { get; set; }
         public List<bool> ConfirmedEmailSent { get; set; }
 
-        public Client(string lastName, string firstName, string email, DateOnly birthday, string phoneNumber, string gender, string password, Address address)
-            : base(lastName, firstName, email, birthday, phoneNumber, gender, password, address)
+        public Client(int id, string lastName, string firstName, string email, DateOnly birthday, string phoneNumber, string gender, string password, Address address)
+            : base(id,lastName, firstName, email, birthday, phoneNumber, gender, password, address)
         {
             _appointmentsNumber = 0;
             _cancellationsNumber = 0;

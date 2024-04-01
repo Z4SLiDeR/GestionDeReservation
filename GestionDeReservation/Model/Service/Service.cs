@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestionDeReservation.Model.Service
 {
-    public class Service
+    public abstract class Service
     {
         private string _name;
         private double _price;

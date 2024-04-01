@@ -6,6 +6,7 @@ namespace GestionDeReservation.Model.People
     public class User
     {
         #region Attributs
+        private int _id;
         private string _lastName;
         private string _firstName;
         private string _email;
@@ -26,8 +27,9 @@ namespace GestionDeReservation.Model.People
         #endregion
 
         #region Constructeur
-        public User(string lastName, string firstName, string email, DateOnly birthday, string phoneNumber, string gender, string password, Address address)
+        public User(int id,string lastName, string firstName, string email, DateOnly birthday, string phoneNumber, string gender, string password, Address address)
         {
+            Id = id;
             LastName = lastName;
             FirstName = firstName;
             Email = email;
@@ -42,6 +44,14 @@ namespace GestionDeReservation.Model.People
         #endregion
 
         #region GetAndSet
+        public int Id
+        {
+            get => _id;
+            set
+            {
+                _id = value;
+            }
+        }
         public string LastName
         {
             get => _lastName;
@@ -374,9 +384,9 @@ namespace GestionDeReservation.Model.People
             }
             else
             {
-                // Si l'utilisateur n'est pas encore un client, il devient un client en prenant ce rendez-vous
-                var address = new Address(0, "", 0, "", Address.Country.Belgium); // Adresse fictive, à adapter selon vos besoins
-                var clientUser = new Client(this.LastName, this.FirstName, this.Email, this.Birthday, this.PhoneNumber, this.Gender, this.Password, address);
+                // Si l'utilisateur n'est pas déjà un client
+                var address = new Address(0, "", 0, "", Address.whichCountry.Belgium);
+                var clientUser = new Client(this.Id, this.LastName, this.FirstName, this.Email, this.Birthday, this.PhoneNumber, this.Gender, this.Password, address);
                 clientUser.TakeAppointment(appointmentTime);
                 return true;
             }
