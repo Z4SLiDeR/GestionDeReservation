@@ -190,11 +190,11 @@ namespace GestionDeReservation.Model.People
             obligatoirement de 1 à 20 caractère de a z, 0 à 9 puis un . puis 2 à 3 caractères (be, com, fr, ...*/
             if (!string.IsNullOrEmpty(tryEmail))
             {
-                if (!Regex.IsMatch(tryEmail, @"^[a-z0-9]{1,25}@[a-z0-9]{1,20}\.[a-z]{2,3}$"))
-                {
-                    //MessageBox.Show($"L'adresse mail est incorrecte", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return false;
-                }
+                //if (!Regex.IsMatch(tryEmail, @"^[a-z0-9]{1,25}@[a-z0-9]{1,20}\.[a-z]{2,3}$"))
+                //{
+                //    //MessageBox.Show($"L'adresse mail est incorrecte", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Warning);
+                //    return false;
+                //}
                 return true;
             }
             return false;
@@ -272,8 +272,7 @@ namespace GestionDeReservation.Model.People
 
             if (!string.IsNullOrEmpty(firstName) && !string.IsNullOrEmpty(lastName))
             {
-                if (password.ToLower().Contains(firstName.ToLower()) ||
-                    password.ToLower().Contains(lastName.ToLower()))
+                if (password.ToLower().Contains(firstName.ToLower()) || password.ToLower().Contains(lastName.ToLower()))
                 {
                     //MessageBox.Show("Le mot de passe ne peut comporter ni votre nom ni votre prénom",
                     //              "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Warning);

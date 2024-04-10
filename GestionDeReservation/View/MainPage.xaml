@@ -1,27 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GestionDeReservation.MainPage">
 
     <ScrollView>
-        
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-
+        <StackLayout Orientation="Vertical" Padding="20">
             <Label
                 x:Name="lblDebug"
                 Text="debug Text"
                 Style="{StaticResource LabelDebug}"
-                                    />
+                Margin="0,0,0,20"/>
 
-            <Button
-               x:Name="ButtonTestNew"
-               Text="ButtonTestNew"
-               Clicked="ButtonTestInterfaceAndDataAccess_Clicked"
-               Style="{StaticResource TestButton}"
-               />
-        </VerticalStackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="20">
+                <Button
+                    x:Name="ButtonTestNewCSV"
+                    Text="ButtonTestNewCSV"
+                    Clicked="ButtonTestInterfaceAndDataAccess_Clicked"
+                    Style="{StaticResource TestButton}"/>
+
+                <Button
+                    x:Name="ButtonTestNewJson"
+                    Text="ButtonTestNewJson"
+                    Clicked="buttonTestDataAccessJsonFile_Clicked"
+                    Style="{StaticResource TestButton}"/>
+            </StackLayout>
+        </StackLayout>
     </ScrollView>
-
 </ContentPage>

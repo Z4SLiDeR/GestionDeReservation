@@ -423,4 +423,19 @@
         <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
     </Style>
 
+    <Style x:Key="LabelDebug" TargetType="Label">
+        <!-- Define your label style here -->
+    </Style>
+
+    <Style x:Key="TestButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Gray"/>
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="BorderWidth" Value="0"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="WidthRequest" Value="200"/>
+        <Setter Property="HeightRequest" Value="100"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+    </Style>
+
 </ResourceDictionary>

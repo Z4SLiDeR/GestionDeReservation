@@ -1,0 +1,99 @@
+{
+  "$type": "GestionDeReservation.Model.People.UserMembersCollection, GestionDeReservation",
+  "$values": [
+    {
+      "$type": "GestionDeReservation.Model.People.User, GestionDeReservation",
+      "Id": 1,
+      "LastName": "Doyon",
+      "FirstName": "Eugene",
+      "Email": "EugeneDoyon@hotmail.com",
+      "PhoneNumber": null,
+      "Birthday": "2003-04-04",
+      "Gender": "Non défini",
+      "Address": null,
+      "Password": "azerty123"
+    },
+    {
+      "$type": "GestionDeReservation.Model.People.User, GestionDeReservation",
+      "Id": 2,
+      "LastName": "Boul",
+      "FirstName": "Luce",
+      "Email": "LuceBoule@gmail.com",
+      "PhoneNumber": null,
+      "Birthday": "2024-04-04",
+      "Gender": "Non défini",
+      "Address": null,
+      "Password": "azerty123"
+    },
+    {
+      "$type": "GestionDeReservation.Model.People.Client, GestionDeReservation",
+      "ReminderAppointmentMessagesSent": {
+        "$type": "System.Collections.Generic.List`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "ConfirmedEmailSent": {
+        "$type": "System.Collections.Generic.List`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "AppointmentsNumber": 0,
+      "CancellationsNumber": 0,
+      "Id": 3,
+      "LastName": "Vernadeau",
+      "FirstName": "Cendrillon",
+      "Email": "CendrillonVernadeau@gmail.com",
+      "PhoneNumber": null,
+      "Birthday": "2008-04-04",
+      "Gender": "Non défini",
+      "Address": null,
+      "Password": "azerty123"
+    },
+    {
+      "$type": "GestionDeReservation.Model.People.Client, GestionDeReservation",
+      "ReminderAppointmentMessagesSent": {
+        "$type": "System.Collections.Generic.List`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "ConfirmedEmailSent": {
+        "$type": "System.Collections.Generic.List`1[[System.Boolean, System.Private.CoreLib]], System.Private.CoreLib",
+        "$values": []
+      },
+      "AppointmentsNumber": 0,
+      "CancellationsNumber": 0,
+      "Id": 4,
+      "LastName": "Lacasse",
+      "FirstName": "Dreux",
+      "Email": "DreuxLacasse@hotmail.com",
+      "PhoneNumber": null,
+      "Birthday": "2006-04-04",
+      "Gender": "Non défini",
+      "Address": null,
+      "Password": "azerty123"
+    },
+    {
+      "$type": "GestionDeReservation.Model.People.Admin, GestionDeReservation",
+      "Role": 0,
+      "Id": 5,
+      "LastName": "Chapin",
+      "FirstName": "Poisson",
+      "Email": "ChapinPoisson@gmail.com",
+      "PhoneNumber": null,
+      "Birthday": "1582-04-04",
+      "Gender": "Non défini",
+      "Address": null,
+      "Password": "azerty123"
+    },
+    {
+      "$type": "GestionDeReservation.Model.People.Admin, GestionDeReservation",
+      "Role": 0,
+      "Id": 6,
+      "LastName": "Goudreau",
+      "FirstName": "Alphonse",
+      "Email": "AlphonseGoudreau@gmail.com",
+      "PhoneNumber": null,
+      "Birthday": "1999-04-04",
+      "Gender": "Non défini",
+      "Address": null,
+      "Password": "azerty123"
+    }
+  ]
+}
