@@ -10,13 +10,11 @@ namespace GestionDeReservation
         public MainPage()
         {
             InitializeComponent();
+            lblDebug = new Label();
         }
 
         private void ButtonTestInterfaceAndDataAccess_Clicked(object sender, EventArgs e)
         {
-            // CONFIG_FILE POUR TOUR ↓↓↓
-            //string CONFIG_FILE = @"D:\IRAM\2023_2024\0_POO\MAUI_Projects\Brasserie\Configuration\Datas\Config.txt";
-            // CONFIG_FILE POUR PORTABLE ↓↓↓
 
             string CONFIG_FILE = @"C:\POO\MAUI\GestionDeReservation\GestionDeReservation\Configuration\Datas\Config.txt";
             DataFilesManager dataFilesManager = new DataFilesManager(CONFIG_FILE);

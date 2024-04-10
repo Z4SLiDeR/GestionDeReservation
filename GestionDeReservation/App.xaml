@@ -9,6 +9,15 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            
+            <Style x:Key="LabelDebug" TargetType="Label">
+                <!-- Define your label style here -->
+            </Style>
+            
+            <Style x:Key="TestButton" TargetType="Button">
+                <!-- Définissez ici les propriétés de style pour votre bouton TestButton -->
+            </Style>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
