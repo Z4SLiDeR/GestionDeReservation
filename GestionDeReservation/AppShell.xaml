@@ -8,7 +8,7 @@
     Title="GestionDeReservation">
 
     <ShellContent
-        Title="Home"
+        Title="Gestion De Réservation"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
