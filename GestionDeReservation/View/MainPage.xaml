@@ -1,6 +1,18 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GestionDeReservation.MainPage">
+             x:Class="GestionDeReservation.MainPage"
+             Shell.BackgroundColor="#F24D65"
+             Shell.TitleColor="White">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="ToolbarItem_Clicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource 
+                    FontFamily="MaterialIcons-Regular"
+                    Glyph="&#xe5d2;"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
 
     <ScrollView>
         <StackLayout Orientation="Vertical" Padding="20">
