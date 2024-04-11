@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestionDeReservation.Model.Service
 {
-    public abstract class Service
+    public class Service
     {
         private string _name;
         private double _price;
@@ -25,5 +25,7 @@ namespace GestionDeReservation.Model.Service
             _price = price;
             _serviceDuration = serviceDuration;
         }
+
+
     }
 }

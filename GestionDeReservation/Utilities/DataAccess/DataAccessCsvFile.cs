@@ -45,6 +45,33 @@ namespace GestionDeReservation.Utilities.DataAccess
             }
         }//end GetAllItems
 
+        public override UserMembersCollection GetAllClientMembers()
+        {
+            List<string> listToRead = new List<string>();
+            UserMembersCollection clientMembers = new UserMembersCollection();
+            AccessPath = DataFilesManager.DataFiles.GetFilePathByCodeFunction("PEOPLE");
+            if (IsValidAccessPath)
+            {
+                listToRead = System.IO.File.ReadAllLines(AccessPath).ToList();
+                //remove first title line
+                listToRead.RemoveAt(0);
+                foreach (string s in listToRead)
+                {
+                    Client c = GetClientMember(s);
+                    if (c != null)
+                    {
+                        clientMembers.AddUserMember(c);
+                    }
+                }
+                return clientMembers;
+            }
+            else
+            {
+                //Console.WriteLine("GetAllItems Failes -> File doesnt exist");
+                return null;
+            }
+        }
+
         /// <summary>
         /// Split a line like : Customer;1;Beumier;Damien;true;beumierdamien@gmail.com;485678234;New;;;;
         /// and create instance with each fields.
@@ -66,6 +93,20 @@ namespace GestionDeReservation.Utilities.DataAccess
                 case "ADMIN":
                     return new Admin(id: int.Parse(fields[1]), lastName: fields[2], firstName: fields[3], email: fields[4], birthday: DateOnly.Parse(fields[5]), phoneNumber: fields[6], gender: fields[7], password: fields[8], role: Admin.AdminType.Direction ,address: address);
 
+                default:
+                    return null;
+            }
+
+        }
+
+        private static Client GetClientMember(string csvline)
+        {
+            Address address = null; // à changer 
+            string[] fields = csvline.Split(';');
+            switch (fields[0])
+            {
+                case "CLIENT":
+                    return new Client(id: int.Parse(fields[1]), lastName: fields[2], firstName: fields[3], email: fields[4], birthday: DateOnly.Parse(fields[5]), phoneNumber: fields[6], gender: fields[7], password: fields[8], address: address);
                 default:
                     return null;
             }

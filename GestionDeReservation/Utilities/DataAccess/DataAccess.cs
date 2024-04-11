@@ -61,6 +61,7 @@ namespace GestionDeReservation.Utilities.DataAccess
         /// </summary>
         public bool IsValidAccessPath => CheckAccessPath(AccessPath);
         public abstract UserMembersCollection GetAllUserMembers();
+        public abstract UserMembersCollection GetAllClientMembers();
 
         /// <summary>
         /// Check AccessPath to the data source file. File path must exist and if

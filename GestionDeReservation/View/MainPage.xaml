@@ -34,6 +34,12 @@
                     Text="ButtonTestNewJson"
                     Clicked="buttonTestDataAccessJsonFile_Clicked"
                     Style="{StaticResource TestButton}"/>
+
+                <Button
+                    x:Name="ButtonGetClient"
+                    Text="GetClient"
+                    Clicked="ButtonGetClient_Clicked"
+                    Style="{StaticResource TestButton}"/>
             </StackLayout>
         </StackLayout>
     </Grid>

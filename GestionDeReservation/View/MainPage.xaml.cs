@@ -1,6 +1,6 @@
-﻿using GestionDeReservation.Utilities.DataAccess;
+﻿using GestionDeReservation.Model.People;
+using GestionDeReservation.Utilities.DataAccess;
 using GestionDeReservation.Utilities.DataAccess.Files;
-using GestionDeReservation.Model.People;
 
 namespace GestionDeReservation
 {
@@ -39,7 +39,6 @@ namespace GestionDeReservation
 
             // Affichage des informations de chaque élément
             members.ToList().ForEach(it => lblDebug.Text += $"\n UserMember: {it.Id} / {it.FirstName}/ {it.LastName}/ {it.Email} / {it.Birthday} / JSON");
-            Console.WriteLine("blablabouille");
 
             // Sauvegarde des données mises à jour
             //da.UpdateAllMembersDatas(members);
@@ -48,6 +47,17 @@ namespace GestionDeReservation
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
 
+        }
+
+        private void ButtonGetClient_Clicked(object sender, EventArgs e)
+        {
+            string CONFIG_FILE = @"C:\POO\MAUI\GestionDeReservation\GestionDeReservation\Configuration\Datas\ConfigCSV.txt";
+            DataFilesManager dataFilesManager = new DataFilesManager(CONFIG_FILE);
+            DataAccessCsvFile daCsv = new DataAccessCsvFile(dataFilesManager);
+
+
+            UserMembersCollection clientMembers = daCsv.GetAllClientMembers();
+            clientMembers.ToList().ForEach(um => lblDebug.Text += $"\n Client: {um.Id} / {um.FirstName}/ {um.LastName}/ {um.Email} / CSV");
         }
     }
 
