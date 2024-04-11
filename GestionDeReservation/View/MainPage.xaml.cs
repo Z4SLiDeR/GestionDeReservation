@@ -39,6 +39,7 @@ namespace GestionDeReservation
 
             // Affichage des informations de chaque élément
             members.ToList().ForEach(it => lblDebug.Text += $"\n UserMember: {it.Id} / {it.FirstName}/ {it.LastName}/ {it.Email} / {it.Birthday} / JSON");
+            Console.WriteLine("blablabouille");
 
             // Sauvegarde des données mises à jour
             //da.UpdateAllMembersDatas(members);
