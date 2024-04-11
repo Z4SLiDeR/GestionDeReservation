@@ -6,13 +6,6 @@ using System.Threading.Tasks;
 
 namespace GestionDeReservation.Utilities.DataAccess.Files
 {    
-   ///The paths and subjects are stored in a config text file like this
-   ///FOLDER,C:\Cours\IRAM PS\ISA\ISA D\POO\MAUI Projects\Brasserie\Configuration\Datas\Csv\
-   ///ITEMS,CsvItems.csv
-   ///TABLES,CsvTables.csv
-   ///PEOPLE,CsvPersons.csv <summary>
-   ///This DataFileManager class retrieve all files a store informations (fullPath, concern, in a collection of DataFile objects
-   /// </summary>
     public class DataFilesManager
     {
         public DataFilesManager(string configFile)

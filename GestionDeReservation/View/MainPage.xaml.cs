@@ -15,13 +15,13 @@ namespace GestionDeReservation
         private void ButtonTestInterfaceAndDataAccess_Clicked(object sender, EventArgs e)
         {
 
-            string CONFIG_FILE = @"C:\POO\MAUI\GestionDeReservation\GestionDeReservation\Configuration\Datas\Config.txt";
+            string CONFIG_FILE = @"C:\POO\MAUI\GestionDeReservation\GestionDeReservation\Configuration\Datas\ConfigCSV.txt";
             DataFilesManager dataFilesManager = new DataFilesManager(CONFIG_FILE);
             DataAccessCsvFile daCsv = new DataAccessCsvFile(dataFilesManager);
 
 
             UserMembersCollection userMembers = daCsv.GetAllUserMembers();
-            userMembers.ToList().ForEach(um => lblDebug.Text += $"\n UserMember: {um.Id} / {um.FirstName}/ {um.LastName}/ {um.Email}");
+            userMembers.ToList().ForEach(um => lblDebug.Text += $"\n UserMember: {um.Id} / {um.FirstName}/ {um.LastName}/ {um.Email} / CSV");
         }
 
         private void buttonTestDataAccessJsonFile_Clicked(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace GestionDeReservation
             UserMembersCollection members = da.GetAllUserMembers();
 
             // Affichage des informations de chaque élément
-            members.ToList().ForEach(it => lblDebug.Text += $"\n UserMember: {it.Id} / {it.FirstName}/ {it.LastName}/ {it.Email} / {it.Birthday}");
+            members.ToList().ForEach(it => lblDebug.Text += $"\n UserMember: {it.Id} / {it.FirstName}/ {it.LastName}/ {it.Email} / {it.Birthday} / JSON");
 
             // Sauvegarde des données mises à jour
             //da.UpdateAllMembersDatas(members);
