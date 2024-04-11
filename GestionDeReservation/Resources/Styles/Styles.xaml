@@ -424,13 +424,17 @@
     </Style>
 
     <Style x:Key="LabelDebug" TargetType="Label">
-        <!-- Define your label style here -->
+        <Setter Property="BackgroundColor" Value="Gray"/>
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FontAttributes" Value="Italic"/>
     </Style>
 
     <Style x:Key="TestButton" TargetType="Button">
-        <Setter Property="BackgroundColor" Value="BlueViolet"/>
+        <Setter Property="BackgroundColor" Value="Salmon"/>
         <Setter Property="TextColor" Value="White"/>
         <Setter Property="BorderWidth" Value="0"/>
+        <Setter Property="BorderColor" Value="Transparent"/>
         <Setter Property="Padding" Value="10"/>
         <Setter Property="WidthRequest" Value="200"/>
         <Setter Property="HeightRequest" Value="100"/>

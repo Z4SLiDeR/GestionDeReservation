@@ -14,7 +14,7 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>
 
-    <ScrollView>
+    <Grid>
         <StackLayout Orientation="Vertical" Padding="20">
             <Label
                 x:Name="lblDebug"
@@ -36,6 +36,6 @@
                     Style="{StaticResource TestButton}"/>
             </StackLayout>
         </StackLayout>
-    </ScrollView>
+    </Grid>
 </ContentPage>
 
