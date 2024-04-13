@@ -61,8 +61,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\PEOPLE_GESTION_DE_RESERVATION.json" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Fonts\MaterialIcons-Regular.ttf" />
 	  <None Remove="Resources\Images\icons8_connected.png" />
+	  <None Remove="Resources\Raw\PEOPLE_GESTION_DE_RESERVATION.json" />
 	</ItemGroup>
 
 	<ItemGroup>
