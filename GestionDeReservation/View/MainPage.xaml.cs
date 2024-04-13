@@ -1,6 +1,7 @@
 ﻿using GestionDeReservation.Model.People;
 using GestionDeReservation.Utilities.DataAccess;
 using GestionDeReservation.Utilities.DataAccess.Files;
+using GestionDeReservation.View;
 
 namespace GestionDeReservation
 {
@@ -44,9 +45,9 @@ namespace GestionDeReservation
             //da.UpdateAllMembersDatas(members);
         }
 
-        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new UserPage());
         }
 
         private void ButtonGetClient_Clicked(object sender, EventArgs e)
@@ -58,6 +59,11 @@ namespace GestionDeReservation
 
             UserMembersCollection clientMembers = daCsv.GetAllClientMembers();
             clientMembers.ToList().ForEach(um => lblDebug.Text += $"\n Client: {um.Id} / {um.FirstName}/ {um.LastName}/ {um.Email} / CSV");
+        }
+
+        private async void ToolbarItem_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
         }
     }
 

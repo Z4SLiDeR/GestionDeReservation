@@ -3,8 +3,16 @@
              x:Class="GestionDeReservation.MainPage"
              Shell.BackgroundColor="#F24D65"
              Shell.TitleColor="White">
-
+    
+    
     <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="ToolbarItem_Clicked_1">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource 
+                    FontFamily="MaterialIcons-Regular"
+                    Glyph="&#xe88a;"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
         <ToolbarItem Clicked="ToolbarItem_Clicked">
             <ToolbarItem.IconImageSource>
                 <FontImageSource 
