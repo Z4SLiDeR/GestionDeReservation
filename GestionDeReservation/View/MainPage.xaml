@@ -10,7 +10,7 @@
             <ToolbarItem.IconImageSource>
                 <FontImageSource 
                     FontFamily="MaterialIcons-Regular"
-                    Glyph="&#xe88a;"/>
+                    Glyph="&#xe174;"/>
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
         <ToolbarItem Clicked="ToolbarItem_Clicked">

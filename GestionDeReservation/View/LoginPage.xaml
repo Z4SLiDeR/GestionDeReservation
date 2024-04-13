@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestionDeReservation.View.LoginPage"
+             Title="Se connecter"
+             Shell.BackgroundColor="#F24D65"
+             Shell.TitleColor="White">
+    
+    <VerticalStackLayout Margin="20">
+        <Grid Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="icons8_connected.png" HeightRequest="150"/>
+            <StackLayout Grid.Column="1">
+                <Label Text="Connexion" FontSize="24" FontAttributes="Bold" />
+                <Label Text="Veuillez vous connecter pour accéder à votre compte"/>
+            </StackLayout>
+        </Grid>
+        <Frame Padding="10,0" BorderColor="#ececec" Margin="0,0,0,20">
+            <Entry Placeholder="Pseudo" x:Name="pseudo"/>
+        </Frame>
+
+        <Frame Padding="10,0" BorderColor="#ececec" Margin="0,0,0,20">
+            <Entry Placeholder="Password" IsPassword="True"  x:Name="pass"/>
+        </Frame>
+
+        <HorizontalStackLayout Margin="0,10,0,0">
+            <CheckBox/>
+            <Label Text="Se souvenir de moi" Padding="0,11"/>
+        </HorizontalStackLayout>
+
+        <Button Text="Se connecter"
+                WidthRequest="250"
+                Margin="0,40,0,0"
+                BackgroundColor="#F24D65"
+                FontSize="16" 
+                Clicked="Button_Clicked"/>
+
+        <Button Text="Mot de passe oublié" 
+                Background="Transparent" 
+                TextColor="#323a45" 
+                Clicked="Button_Clicked_1"/>
+    </VerticalStackLayout>
+</ContentPage>
