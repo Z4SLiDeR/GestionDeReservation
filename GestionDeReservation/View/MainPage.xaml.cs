@@ -2,6 +2,7 @@
 using GestionDeReservation.Utilities.DataAccess;
 using GestionDeReservation.Utilities.DataAccess.Files;
 using GestionDeReservation.View;
+using GestionDeReservation.ViewModel;
 
 namespace GestionDeReservation
 {
@@ -11,6 +12,12 @@ namespace GestionDeReservation
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        public MainPage(MainViewModel mainViewModel)
+        {
+            InitializeComponent();
+            BindingContext = mainViewModel;
         }
 
         private void ButtonTestInterfaceAndDataAccess_Clicked(object sender, EventArgs e)
@@ -65,6 +72,7 @@ namespace GestionDeReservation
         {
             await Navigation.PushAsync(new LoginPage());
         }
+
     }
 
 }

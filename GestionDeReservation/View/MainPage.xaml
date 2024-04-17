@@ -1,5 +1,7 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:GestionDeReservation.ViewModel"
+             x:DataType="viewmodel:MainViewModel"
              x:Class="GestionDeReservation.MainPage"
              Shell.BackgroundColor="#F24D65"
              Shell.TitleColor="White">
@@ -24,6 +26,14 @@
 
     <Grid>
         <StackLayout Orientation="Vertical" Padding="20">
+            <CollectionView Grid.Row="1" Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Ingredients}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Type x:String}">
+                        <Label Text="{Binding}" FontSize="18"/>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
             <Label
                 x:Name="lblDebug"
                 Text="debug Text"
@@ -48,8 +58,12 @@
                     Text="GetClient"
                     Clicked="ButtonGetClient_Clicked"
                     Style="{StaticResource TestButton}"/>
+
+                <Entry Text="{Binding Text}"/>
+                <Button Grid.Column="1" Text="Ajouter" FontSize="18" Command="{Binding AddItemCommand}"/>
             </StackLayout>
         </StackLayout>
     </Grid>
+
 </ContentPage>
 
